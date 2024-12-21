@@ -56,4 +56,4 @@ JuiceboxStore/ ├── backend/ │
 
 ### ScreenShots
 
-![JbStore SS](screenshots\ScreenshotJbstore.png)
+![JbStore SS](./screenshots/ScreenshotJbstore.png)
