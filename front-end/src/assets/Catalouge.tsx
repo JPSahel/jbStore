@@ -13,9 +13,10 @@ type Product = {
 
 type CatalogueProps = {
   activeFlavors: string[];
+  addToCart: (product: Product) => void;
 };
 
-const Catalogue: React.FC<CatalogueProps> = ({ activeFlavors }) => {
+const Catalogue: React.FC<CatalogueProps> = ({ activeFlavors, addToCart }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -60,7 +61,7 @@ const Catalogue: React.FC<CatalogueProps> = ({ activeFlavors }) => {
         {filteredProducts.map((product) => (
           <div
             key={product._id}
-            className="bg-white shadow-md rounded p-4 flex flex-col items-center"
+            className="bg-white shadow-md rounded p-4 flex flex-col items-center pb-[-6]"
           >
             <img
               src={`${product.picture}`}
@@ -75,6 +76,12 @@ const Catalogue: React.FC<CatalogueProps> = ({ activeFlavors }) => {
             <p className="text-gray-500 text-sm mt-1">
               <strong>Brand:</strong> {product.brand}
             </p>
+            <button
+              onClick={() => addToCart(product)}
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400 mt-2"
+            >
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>
