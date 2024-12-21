@@ -49,5 +49,6 @@ How to Use 🛍️
 2. Browse the filtered products in the catalogue.
 3. Add items to your cart.
 4. Checkout by entering your email to receive a detailed purchase summary.
+![Uploading image.png…]()
 
 
