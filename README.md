@@ -50,6 +50,7 @@ JuiceboxStore/
    ```
 2. npm install in both front end and backend
 3. Create ENV in backend with your own DB in MongoDb using this Schema
+```bash
    _id: string;
   name: string;
   flavor: string[];
@@ -57,9 +58,10 @@ JuiceboxStore/
   price: number;
   brand: string;
   picture: string;
+```
 (for the pictures You can add your own to front-end/public)
-5. do (cd front-end) in one terminal than do (npm run dev)
-6. do (cd back-end) in another terminal then do (node server.js)
+5. do ``` bash cd front-end ```in one terminal than do ``` bash npm run dev```
+6. do ``` bash cd back-end ``` in another terminal then do ```bash node server.js```
 
 ### How to Use 🛍️
    
