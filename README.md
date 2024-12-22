@@ -41,21 +41,32 @@ JuiceboxStore/
 - MongoDB Atlas (or local MongoDB instance)
 - EmailJS account
 
-### Backend Setup
+### Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/juicebox-store.git
    cd juicebox-store/backend
    ```
-2. npm install
-3. Create ENV in backend with your own DB with Schema
-4. npm start
-   How to Use 🛍️
-5. Select your favorite juice flavors from the Flavors section up to two flavors.
-6. Browse the filtered products in the catalogue.
-7. Add items to your cart.
-8. Checkout by entering your email to receive a detailed purchase summary.
+2. npm install in both front end and backend
+3. Create ENV in backend with your own DB in MongoDb using this Schema
+   _id: string;
+  name: string;
+  flavor: string[];
+  description: string;
+  price: number;
+  brand: string;
+  picture: string;
+(for the pictures You can add your own to front-end/public)
+5. do (cd front-end) in one terminal than do (npm run dev)
+6. do (cd back-end) in another terminal then do (node server.js)
+
+### How to Use 🛍️
+   
+6. Select your favorite juice flavors from the Flavors section up to two flavors.
+7. Browse the filtered products in the catalogue.
+8. Add items to your cart.
+9. Checkout by entering your email to receive a detailed purchase summary.
 
 ### ScreenShots
 
