@@ -19,7 +19,19 @@ Juicebox Store is a fully functional e-commerce web application for juice lovers
 
 ## Project Structure 📁
 
-JuiceboxStore/ ├── backend/ │ ├── server.js # Node.js server │ ├── routes/ # API routes │ ├── models/ # MongoDB schemas │ └── .env # Environment variables ├── frontend/ │ ├── src/ │ │ ├── components/ # React components (NavBar, Catalogue, etc.) │ │ └── App.js # Main App component │ ├── public/ # Static files (images, icons) │ └── package.json # Frontend dependencies └── README.md # Project documentation
+JuiceboxStore/
+├── backend/
+│   ├── server.js           # Node.js server
+│   ├── routes/             # API routes
+│   ├── models/             # MongoDB schemas
+│   └── .env                # Environment variables
+├── frontend/
+│   ├── src/
+│   │   ├── components/     # React components (NavBar, Catalogue, etc.)
+│   │   └── App.js          # Main App component
+│   ├── public/             # Static files (images, icons)
+│   └── package.json        # Frontend dependencies
+└── README.md               # Project documentation
 
 ## Setup and Installation ⚙️
 
