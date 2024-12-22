@@ -54,13 +54,12 @@ JuiceboxStore/
 ```bash
    _id: string;
   name: string;
-  flavor: string[];
+  flavor: string[]; # Environment variables Note that an Item can only have two flavors and it must be from the ones listed in the Categories 
   description: string;
   price: number;
   brand: string;
-  picture: string;
+  picture: string; #There are existing images in the public folder inside front-end in where you can do imagename.png or add your own images for whatever Item you would like to add
 ```
-(for the pictures You can add your own to front-end/public)
 5. do ```cd front-end ```in one terminal than do ```npm run dev```
 6. do ``` cd back-end ``` in another terminal then do ```node server.js```
 
