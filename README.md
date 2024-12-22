@@ -65,10 +65,10 @@ JuiceboxStore/
 
 ### How to Use 🛍️
    
-6. Select your favorite juice flavors from the Flavors section up to two flavors.
-7. Browse the filtered products in the catalogue.
-8. Add items to your cart.
-9. Checkout by entering your email to receive a detailed purchase summary.
+1. Select your favorite juice flavors from the Flavors section up to two flavors.
+2. Browse the filtered products in the catalogue.
+3. Add items to your cart.
+4. Checkout by entering your email to receive a detailed purchase summary.
 
 ### ScreenShots
 
