@@ -18,7 +18,7 @@ Juicebox Store is a fully functional e-commerce web application for juice lovers
 - **Email Service**: EmailJS
 
 ## Project Structure 📁
-
+```bash
 JuiceboxStore/
 ├── backend/
 │   ├── server.js           # Node.js server
@@ -32,7 +32,7 @@ JuiceboxStore/
 │   ├── public/             # Static files (images, icons)
 │   └── package.json        # Frontend dependencies
 └── README.md               # Project documentation
-
+```
 ## Setup and Installation ⚙️
 
 ### Prerequisites
@@ -40,6 +40,7 @@ JuiceboxStore/
 - Node.js (v16+)
 - MongoDB Atlas (or local MongoDB instance)
 - EmailJS account
+- Knowledge of setting up MongoDB connection
 
 ### Setup
 
@@ -60,8 +61,8 @@ JuiceboxStore/
   picture: string;
 ```
 (for the pictures You can add your own to front-end/public)
-5. do ``` bash cd front-end ```in one terminal than do ``` bash npm run dev```
-6. do ``` bash cd back-end ``` in another terminal then do ```bash node server.js```
+5. do ```cd front-end ```in one terminal than do ```npm run dev```
+6. do ``` cd back-end ``` in another terminal then do ```node server.js```
 
 ### How to Use 🛍️
    
