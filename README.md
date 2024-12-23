@@ -50,7 +50,8 @@ JuiceboxStore/
    cd juicebox-store/backend
    ```
 2. npm install in both front end and backend
-3. Create ENV in backend with your own DB in MongoDb using this Schema
+3. Set up an emailjs account and add emailjs details inside src/navbar
+4. Create ENV in backend with your own DB in MongoDb using this Schema
 ```bash
    _id: string;
   name: string;
