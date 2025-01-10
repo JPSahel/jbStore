@@ -18,18 +18,21 @@ Juicebox Store is a fully functional e-commerce web application for juice lovers
 - **Email Service**: EmailJS
 
 ## Project Structure 📁
-
-JuiceboxStore/ ├── backend/ │
-├── server.js # Node.js server │
-├── routes/ # API routes │
-├── models/ # MongoDB schemas │
+```bash
+JuiceboxStore/
+├── backend/
+│   ├── server.js           # Node.js server
+│   ├── routes/             # API routes
+│   ├── models/             # MongoDB schemas
+│   └── .env                # Environment variables
 ├── frontend/
-│ ├── src/ │ │
-├── components/ # React components (NavBar, Catalogue, etc.) │
-│ └── App.js # Main App component │
-├── public/ # Static files (images, icons)
-│ └── package.json # Frontend dependencies └── README.md # Project documentation
-
+│   ├── src/
+│   │   ├── components/     # React components (NavBar, Catalogue, etc.)
+│   │   └── App.js          # Main App component
+│   ├── public/             # Static files (images, icons)
+│   └── package.json        # Frontend dependencies
+└── README.md               # Project documentation
+```
 ## Setup and Installation ⚙️
 
 ### Prerequisites
@@ -37,22 +40,36 @@ JuiceboxStore/ ├── backend/ │
 - Node.js (v16+)
 - MongoDB Atlas (or local MongoDB instance)
 - EmailJS account
+- Knowledge of setting up MongoDB connection
 
-### Backend Setup
+### Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/juicebox-store.git
    cd juicebox-store/backend
    ```
-2. npm install
-3. Create ENV in backend with your own DB with Schema
-4. npm start
-   How to Use 🛍️
-5. Select your favorite juice flavors from the Flavors section up to two flavors.
-6. Browse the filtered products in the catalogue.
-7. Add items to your cart.
-8. Checkout by entering your email to receive a detailed purchase summary.
+2. npm install in both front end and backend
+3. Set up an emailjs account and add emailjs details inside src/navbar
+4. Create ENV in backend with your own DB in MongoDb using this Schema
+```bash
+   _id: string;
+  name: string;
+  flavor: string[]; # Environment variables Note that an Item can only have two flavors and it must be from the ones listed in the Categories 
+  description: string;
+  price: number;
+  brand: string;
+  picture: string; #There are existing images in the public folder inside front-end in where you can do imagename.png or add your own images for whatever Item you would like to add
+```
+5. do ```cd front-end ```in one terminal than do ```npm run dev```
+6. do ``` cd back-end ``` in another terminal then do ```node server.js```
+
+### How to Use 🛍️
+   
+1. Select your favorite juice flavors from the Flavors section up to two flavors.
+2. Browse the filtered products in the catalogue.
+3. Add items to your cart.
+4. Checkout by entering your email to receive a detailed purchase summary.
 
 ### ScreenShots
 
