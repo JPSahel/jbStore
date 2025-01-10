@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-type Product = {
+export type Product = {
   _id: string;
   name: string;
   flavor: string[];
