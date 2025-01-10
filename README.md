@@ -1,7 +1,8 @@
 # Juicebox Store 🧃🍎
 
 Juicebox Store is a fully functional e-commerce web application for juice lovers! This project allows users to explore a wide range of juice products, filter them by flavors, add them to a cart, and complete purchases with email confirmations.
-
+Check it out right here:
+https://juiceboxstore.netlify.app
 ## Features 🚀
 
 - **Dynamic Product Filtering**: Filter products by selected flavors.
