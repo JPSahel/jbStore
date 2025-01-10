@@ -32,10 +32,7 @@ const NavBar: React.FC<NavBarProps> = ({ cartItems }) => {
 
     emailjs
       .send(
-        "jbstore_service", // Replace with your EmailJS service ID
-        "template_qu79g4b", // Replace with your EmailJS template ID
-        { email, order: orderDetails },
-        "vvAiaGYEoCFWglM41" // Replace with your EmailJS user ID
+
       )
       .then((response) => {
         alert("Email sent successfully!");
